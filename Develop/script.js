@@ -34,7 +34,7 @@ function generatePassword() {
     alert("Too many Characters");
   } 
 
-  
+
   //code for lowercase console log to confirm the answer not needed in final code.
   var lCase = confirm("Should password have lowercase?")
    console.log(lCase)
@@ -69,23 +69,42 @@ function generatePassword() {
   console.log(length)
 
   //https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
-//   let r = (Math.random() + 1).toString(36).substring(7);
-// console.log("random", r);
+  //   let r = (Math.random() + 1).toString(36).substring(7);
+  // console.log("random", r);
 
 
-//https://stackoverflow.com/questions/71084913/make-an-array-with-every-character-on-keyboard
-// let characters = [];
+  //https://stackoverflow.com/questions/71084913/make-an-array-with-every-character-on-keyboard
+  // let characters = [];
 
-// for (let i=32; i<127; i++)
-//   characters.push( String.fromCharCode(i) );
+  // for (let i=32; i<127; i++)
+  //   characters.push( String.fromCharCode(i) );
 
-//   console.log(characters)
+  //   console.log(characters)
 
+  //array for capital leters
+  let CapLet = [];
+
+  for (let i=65; i<91; i++) {
+    CapLet.push( String.fromCharCode(i) );
+
+    console.log(CapLet)
+  }
+
+  //array for lower case letters.
+  let LowLet = [];
+
+  for (let i=97; i<123; i++) {
+    LowLet.push( String.fromCharCode(i) );
+
+    console.log(LowLet)
+  }
+  
+  let symbol = ["!","#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[", "]","^","_","`","{","|","}","~", "\""]
+
+  console.log(symbol)
 
 }
 
+
 // console.log(total)
-
-
-
 
