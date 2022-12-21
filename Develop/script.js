@@ -27,67 +27,42 @@ function generatePassword() {
 
   // code for length of password
   var total = prompt("How many Characters?", "Enter A Number 8 - 128");
-  console.log(total)
   if (total < 8) {
     alert("Too few Chacters");
   } else if (total>128) {
     alert("Too many Characters");
   } 
 
-
   //code for lowercase console log to confirm the answer not needed in final code.
   var lCase = confirm("Should password have lowercase?")
-   console.log(lCase)
-   
 
    //code for upper case 
   var uCase = confirm("Should password for uppercase?")
-    console.log(uCase)
 
   //code for numeric
   var nCase = confirm("Should password have numbers?")
-    console.log(nCase)
 
   // code for Special characters
   var sCase = confirm("Should password have special characters?")
-    console.log(sCase)
 
   // cod to verify there is at least one option selected.  
   if (!lCase && !uCase && !nCase && !sCase) {
     alert("Need to have select at least one character type!");
-    //console.log("Need to have at lease one")
   }
-
-
-
-  //random number generator https://www.w3schools.com/js/js_random.asp
-  //var number = math.floor(math.random()*10)
-  var length = [];
-  for (let i = 0; i < total; i++) {
-    length[i] = Math.floor(Math.random()*10)
-  }
-  console.log(length)
-
-  //https://stackoverflow.com/questions/1349404/generate-random-string-characters-in-javascript
-  //   let r = (Math.random() + 1).toString(36).substring(7);
-  // console.log("random", r);
 
 
   //https://stackoverflow.com/questions/71084913/make-an-array-with-every-character-on-keyboard
-  // let characters = [];
+  let numChar = [];
 
-  // for (let i=32; i<127; i++)
-  //   characters.push( String.fromCharCode(i) );
-
-  //   console.log(characters)
+  for (let i=48; i<58; i++) {
+    numChar.push( String.fromCharCode(i) );
+  }
 
   //array for capital leters
-  let CapLet = [];
+  var CapLet = [];
 
   for (let i=65; i<91; i++) {
     CapLet.push( String.fromCharCode(i) );
-
-    console.log(CapLet)
   }
 
   //array for lower case letters.
@@ -95,16 +70,42 @@ function generatePassword() {
 
   for (let i=97; i<123; i++) {
     LowLet.push( String.fromCharCode(i) );
-
-    console.log(LowLet)
   }
   
   let symbol = ["!","#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[", "]","^","_","`","{","|","}","~", "\""]
 
-  console.log(symbol)
+  //spread operator create pool of characters for password  https://stackoverflow.com/questions/16232915/how-to-copy-all-items-from-one-array-into-another
+  var pool = []
 
+  if (lCase) {
+    pool=[...LowLet,...pool]
+  }
+
+  if (uCase) {
+    pool=[...CapLet,...pool]
+  }
+
+  if (nCase) {
+    pool=[...numChar,...pool]
+  }
+
+  if (sCase) {
+    pool = [...symbol,...pool]
+  }
+
+  //create passwoed from the pool
+  let password = "";
+
+  for (i=0; i<total; i++) {
+    password += pool[Math.floor(Math.random() * pool.length)]
+  }
+
+  if (total < 8) {
+    password = "Not enough Characters.";
+  } 
+
+  if (total>128) {
+    password = "Too many Character selected.";
+  } 
+  return(password)
 }
-
-
-// console.log(total)
-
