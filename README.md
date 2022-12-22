@@ -1,9 +1,9 @@
 # Module-1-Challenge
-Module 1 challenge
+Module 3 challenge
 
 ## Description
 
-This website is a weekly challenge for my full stack coding boot camp. The goal was to update HTML structure.
+This website is a weekly challenge for my full stack coding boot camp. The goal was to create javascript.
 
 
 
@@ -46,6 +46,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[alt-text](Develop\assets\images\Website-mockup.png "Website mock up" )
+<img src="/Develop/Webpage.jpg" alt="Screenshot">
 
-[deploy-link](https://baldoracle.github.io/Module-1-Challenge/)
+[deploy-link](https://baldoracle.github.io/Module-3/)

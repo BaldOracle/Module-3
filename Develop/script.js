@@ -108,4 +108,5 @@ function generatePassword() {
     password = "Too many Character selected.";
   } 
   return(password)
+  
 }
