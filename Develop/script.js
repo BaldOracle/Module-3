@@ -107,6 +107,11 @@ function generatePassword() {
   if (total>128) {
     password = "Too many Character selected.";
   } 
+
+  if (!lCase && !uCase && !nCase && !sCase) {
+    password = "Need to have select at least one character type!"
+  }
+
   return(password)
   
 }
