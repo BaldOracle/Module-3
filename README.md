@@ -1,12 +1,8 @@
-# Module-1-Challenge
-Module 3 challenge
+# Password Generator
 
 ## Description
 
-This website is a weekly challenge for my full stack coding boot camp. The goal was to create javascript.
-
-
-
+The Password Generator app is a simple and user-friendly tool that allows users to create strong and randomized passwords quickly and easily. Developed using HTML, CSS, and JavaScript, this app features a clean and intuitive interface that makes it easy to use for anyone. With customizable options for password length and character types, the Password Generator ensures that users can create strong and secure passwords that meet their specific needs. As an open-source project, this app is constantly evolving and improving thanks to contributions from the development community.
 
 
 ## Installation
@@ -15,7 +11,7 @@ N/A
 
 ## Usage
 
-Tool to study for full stack coding boot camp. We learned about HTML. 
+With the Password Generator app, you can quickly and easily generate strong and randomized passwords that meet your specific requirements. This app was developed as a study tool for a full stack coding boot camp and features technologies such as HTML, CSS, and JavaScript.
 
 ## Credits
 
